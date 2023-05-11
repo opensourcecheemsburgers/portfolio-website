@@ -5,8 +5,11 @@
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <title>Stephen Power</title>
-  <link rel="stylesheet" href="styles.css">
-  <link rel="stylesheet" href="fontawesome-free-6.2.0-web/css/fontawesome.min.css">
+  <link rel="stylesheet" href="css/styles.css">
+  <meta
+  http-equiv="Content-Security-Policy"
+  content="default-src wss: data: img: http://127.0.0.1:5555/; script-src http://127.0.0.1:5555/; style-src http://127.0.0.1:5555/; font-src http://127.0.0.1:5555/fonts/;" />
+
 </head>
 
 <body>
@@ -66,8 +69,8 @@
         <noscript>
           <img id="app-image" src="dev.gif" alt="GIF of a typical day for Stephen" importance="high">
         </noscript>
-        <script src="node_modules/@lottiefiles/lottieplayer/dist/lottie-player.js"></script>
-        <lottie-player style="height: calc(20vmax + 200px); width: calc(20vmax + 200px);" src="https://assets3.lottiefiles.com/packages/lf20_u25cckyh.json" background="transparent"
+        <script src="js/lottie-player.js"></script>
+        <lottie-player style="height: calc(20vmax + 200px); width: calc(20vmax + 200px);" src="lottie/email.json" background="transparent"
           speed="1" loop autoplay></lottie-player>
 
       <a href="mailto:simpilldev@gmail.com">

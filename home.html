@@ -5,8 +5,10 @@
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <title>Stephen Power</title>
-  <link rel="stylesheet" href="styles.css">
-  <link rel="stylesheet" href="fontawesome-free-6.2.0-web/css/fontawesome.min.css">
+  <link rel="stylesheet" href="css/styles.css">
+  <meta
+    http-equiv="Content-Security-Policy"
+    content="default-src wss: data: img: http://127.0.0.1:5555/; script-src http://127.0.0.1:5555/; style-src http://127.0.0.1:5555/; font-src http://127.0.0.1:5555/fonts/;" />
 </head>
 
 <body>
@@ -25,7 +27,7 @@
       </a>
     </div>
     <div id="social-links" class="navbar-item">
-      <a href="https://gitlab.com/simpilldev">
+      <a href="https://github.com/opensourcecheemsburgers">
         <svg id="github-icon" viewBox="0 0 32 32">
           <path fill="#e24329" d="M16 28.896L16 28.896 21.156 13.029 10.844 13.029 16 28.896z"></path>
           <path fill="#fc6d26" d="M16 28.896L10.844 13.029 3.619 13.029 16 28.896z"></path>
@@ -87,10 +89,10 @@
       </div>
       <div id="video-column" class="column">
         <noscript>
-          <img id="app-image" src="dev.gif" alt="GIF of a typical day for Stephen" importance="high">
+          <img id="app-image" src="gif/dev.gif" alt="GIF of a typical day for Stephen" importance="high">
         </noscript>
-        <script src="node_modules/@lottiefiles/lottieplayer/dist/lottie-player.js"></script>
-        <lottie-player src="https://assets8.lottiefiles.com/private_files/lf30_WdTEui.json" background="transparent"
+        <script src="lottie/lottie-player.js"></script>
+        <lottie-player src="lottie/dev.json" background="transparent"
           speed="1" loop autoplay />
       </div>
     </div>
@@ -102,7 +104,7 @@
       <p id="app-description" class="subtitle mt-5 mb-6">A native, free and open-source medication reminder app for
         Android.</p>
       <a id="app-image" href="https://play.google.com/store/apps/details?id=com.winston69.simpill">
-        <img id="app-image" src="imgs/simpill.png" width="270" height="595" alt="Screenshot of Simpill main activity" importance="high">
+        <img id="app-image" src="img/simpill.png" width="270" height="595" alt="Screenshot of Simpill main activity" importance="high">
       </a>
     </div>
   </div>

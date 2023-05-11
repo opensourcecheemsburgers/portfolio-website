@@ -5,8 +5,10 @@
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <title>Stephen Power</title>
-  <link rel="stylesheet" href="styles.css">
-  <link rel="stylesheet" href="fontawesome-free-6.2.0-web/css/fontawesome.min.css">
+  <link rel="stylesheet" href="css/styles.css">
+  <meta
+  http-equiv="Content-Security-Policy"
+  content="default-src wss: data: img: http://127.0.0.1:5555/; script-src http://127.0.0.1:5555/; style-src http://127.0.0.1:5555/; font-src http://127.0.0.1:5555/fonts/;" />
 </head>
 
 <body>
@@ -73,7 +75,7 @@
             <div class="card-image">
               <figure class="image">
                 <img id="album-art" class="image"
-                  src="imgs/trivium.jpg"
+                  src="img/trivium.jpg"
                   alt="Trivium - In the Court of the Dragon [Album Art]">
               </figure>
             </div>
@@ -91,7 +93,7 @@
               <div class="card-image">
                 <figure class="image">
                   <img id="album-art" class="image"
-                    src="imgs/unluckymorpheus.jpg"
+                    src="img/unluckymorpheus.jpg"
                     alt="Unlucky Morpheus - Evolution [Album Art]">
                 </figure>
               </div>
@@ -109,7 +111,7 @@
                 <div class="card-image">
                   <figure class="image">
                     <img id="album-art" class="image"
-                      src="imgs/galneryus.jpg"
+                      src="img/galneryus.jpg"
                       alt="Galneryus - Angel of Salvation [Album Art]">
                   </figure>
                 </div>
@@ -130,15 +132,13 @@
     <p id="music-header" class="title is-1">Games</p>
     <div class="columns is-mobile">
 
-
-      <div
-        class="column is-one-third">
+      <div class="column is-one-third">
         <a href="https://en.wikipedia.org/wiki/Shadow_Tactics:_Blades_of_the_Shogun">
           <div class="card" id="music-card">
             <div class="card-image">
               <figure class="image">
                 <img id="album-art" class="image"
-                  src="imgs/shadowtactics-opt.jpg"
+                  src="img/shadowtactics-opt.jpg"
                   alt="Placeholder image">
               </figure>
             </div>
@@ -147,9 +147,6 @@
                 <div class="media-content">
                   <p class="title my-1" id="artist-name">Shadow Tactics</p>
                 </div>
-                <!-- <svg id="play-btn" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
-                  <path fill="aliceblue" d="M15 12.3301L9 16.6603L9 8L15 12.3301Z" />
-                </svg> -->
               </div>
             </div>
           </div>
@@ -161,7 +158,7 @@
           <div class="card-image">
             <figure class="image">
               <a href="https://en.wikipedia.org/wiki/Dishonored">
-                <img id="album-art" class="image" src="imgs/dishonored-opt.jpg"
+                <img id="album-art" class="image" src="img/dishonored-opt.jpg"
                   alt="Placeholder image">
               </a>
             </figure>
@@ -171,9 +168,6 @@
               <div id="song-info" class="media-content">
                 <p class="title my-1" id="artist-name">Dishonored</p>
               </div>
-              <!-- <svg id="play-btn" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
-                <path fill="aliceblue" d="M15 12.3301L9 16.6603L9 8L15 12.3301Z" />
-              </svg> -->
             </div>
           </div>
         </div>
@@ -185,7 +179,7 @@
             <figure class="image">
               <a href="https://en.wikipedia.org/wiki/Civilization_V">
                 <img id="album-art" class="image"
-                  src="imgs/civ5-opt.jpg"
+                  src="img/civ5-opt.jpg"
                   alt="Placeholder image">
               </a>
             </figure>
@@ -195,9 +189,6 @@
               <div class="media-content">
                 <p class="title my-1" id="artist-name">Civilization V</p>
               </div>
-              <!-- <svg id="play-btn" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
-                <path fill="aliceblue" d="M15 12.3301L9 16.6603L9 8L15 12.3301Z" />
-              </svg> -->
             </div>
           </div>
         </div>
