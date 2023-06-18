@@ -1,0 +1,14 @@
+{
+    "name": "portfolio-website",
+    "private": true,
+    "version": "0.2.0",
+    "description": "Stephen Power's portfolio website.",
+    "devDependencies": {
+        "daisyui": "^3.1.1",
+        "tailwindcss": "^3.3.2"
+    },
+    "scripts": {
+        "tw-dev": "npx tailwindcss -i ./css/input.css -o ./css/output.css --watch",
+        "tw": "npx tailwindcss -i ./css/input.css -o ./css/output.css --minify"
+    }
+}
