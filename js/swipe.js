@@ -24,7 +24,7 @@ document.getElementById("drawer-overlay").addEventListener('touchend', function 
 }, false);
 
 function handleGesture() {
-    if (touchendX > (touchstartX + 50)) {
+    if (touchendX > (touchstartX + 50) && (touchstartY <= touchendY + 50 && touchstartY >= touchendY - 50)) {
         document.getElementById("drawer-input").checked = true;
     }
     if ((touchendX + 50) < touchstartX && document.getElementById("drawer-input").checked == true) {
