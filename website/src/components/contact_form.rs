@@ -1,4 +1,7 @@
-use leptos::{html::Textarea, IntoView, NodeRef, RwSignal, Signal, SignalGet, SignalSet, component, expect_context, view};
+use leptos::{
+    component, expect_context, html::Textarea, view, IntoView, NodeRef,
+    RwSignal, Signal, SignalGet, SignalSet,
+};
 use phosphor_leptos::{EnvelopeSimple, IconWeight, Lock, MatrixLogo};
 
 use crate::{DarkThemeCtx, BODY_TEXT};

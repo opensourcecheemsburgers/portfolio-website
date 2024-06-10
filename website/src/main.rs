@@ -11,8 +11,8 @@ mod components;
 mod pages;
 
 use components::Page;
-use leptos::{IntoView, RwSignal, component, provide_context, view, window};
-use leptos_router::{Router, Routes, Route};
+use leptos::{component, provide_context, view, window, IntoView, RwSignal};
+use leptos_router::{Route, Router, Routes};
 
 use crate::pages::{Contact, Home};
 
@@ -54,5 +54,5 @@ fn App() -> impl IntoView {
 }
 
 fn main() {
-    leptos::mount_to_body(|| view! {<App />});
+    leptos::mount_to_body(|| view! { <App/> });
 }

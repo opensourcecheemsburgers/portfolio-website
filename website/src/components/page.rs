@@ -1,4 +1,4 @@
-use leptos::{IntoView, Signal, SignalGet, component, expect_context, view};
+use leptos::{component, expect_context, view, IntoView, Signal, SignalGet};
 use leptos_router::Outlet;
 
 use crate::{

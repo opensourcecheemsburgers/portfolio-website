@@ -1,4 +1,6 @@
-use leptos::{Children, IntoView, Signal, SignalGet, component, expect_context, view};
+use leptos::{
+    component, expect_context, view, Children, IntoView, Signal, SignalGet,
+};
 use phosphor_leptos::{AppWindow, Binary, GithubLogo, IconWeight, Star};
 
 use super::device_mockups::DeviceMockups;

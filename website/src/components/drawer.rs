@@ -1,4 +1,6 @@
-use leptos::{Children, IntoView, SignalGet, SignalSet, component, expect_context, view};
+use leptos::{
+    component, expect_context, view, Children, IntoView, SignalGet, SignalSet,
+};
 use phosphor_leptos::{
     GithubLogo, House, IconWeight, LinkedinLogo, Mailbox, MoonStars, Sun,
 };

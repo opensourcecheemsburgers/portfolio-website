@@ -1,4 +1,4 @@
-use leptos::{IntoView, component, view};
+use leptos::{component, view, IntoView};
 
 #[component]
 pub fn DeviceMockups(
@@ -11,7 +11,7 @@ pub fn DeviceMockups(
         <div class="w-full carousel">
             <div
                 id=format!("{id_prefix}_desktop")
-                class="relative justify-center items-center carousel-item container-inline-size"
+                class="relative justify-center items-center carousel-item container-inline-size w-full"
             >
                 <div class="w-[96rem] container-inline-size lg:w-[96rem]">
                     <div class="device device-spacegray device-macbook-pro">
