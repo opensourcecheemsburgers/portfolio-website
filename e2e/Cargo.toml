@@ -1,0 +1,15 @@
+[package]
+name = "e2e"
+version.workspace = true
+authors.workspace = true
+categories.workspace = true
+edition.workspace = true
+keywords = ["e2e", "testing"]
+license.workspace = true
+readme.workspace = true
+repository.workspace = true
+description.workspace = true
+
+[dependencies]
+thirtyfour = { workspace = true }
+tokio = { workspace = true }

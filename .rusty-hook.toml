@@ -1,0 +1,4 @@
+[hooks]
+pre-commit = "cargo check && dprint fmt --incremental=false && rustywind website/src/. && cargo clippy --all -- -D warnings"
+pre-push = "cargo run --bin e2e"
+post-commit = "echo 'Commit successful :D'"

@@ -1,0 +1,59 @@
+[workspace]
+members = ["e2e", "website"]
+resolver = "2"
+
+[workspace.package]
+name = "portfolio_website"
+version = "0.1.0"
+authors = ["Stephen Power"]
+categories = ["wasm", "web-programming"]
+edition = "2021"
+keywords = ["leptos", "website", "portfolio"]
+license = "AGPL-3.0"
+readme = "README.md"
+repository = "https://github.com/opensourcecheemsburgers/portfolio-website"
+rust-version = "1.75"
+description = "My portfolio website built with Leptos, Tailwind and DaisyUI."
+
+[workspace.lints.rust]
+unsafe_code = "forbid"
+
+[workspace.lints.clippy]
+all = "warn"
+pedantic = "warn"
+nursery = "warn"
+cargo = "warn"
+
+[workspace.dev-dependencies]
+rusty-hook = "0.12.0"
+
+[profile.release]
+panic = "abort"
+codegen-units = 1
+lto = "fat"
+opt-level = "z"
+strip = true
+
+[profile.dev]
+panic = "abort"
+opt-level = 0
+codegen-units = 256
+lto = "off"
+incremental = true
+debug = false # Enable if debugging is necessary.
+
+[workspace.target.x86_64-unknown-linux-gnu]
+linker = "clang"
+rustflags = ["-C", "link-arg=-fuse-ld=/usr/bin/mold"]
+
+[workspace.dependencies]
+leptos = { version = "0.6.12", features = ["csr", "nightly"] }
+leptos_router = { version = "0.6.12", features = ["csr", "nightly"] }
+phosphor-leptos = "0.5.0"
+thirtyfour = "0.33.0-alpha.2"
+tokio = { version = "1", features = ["full"] }
+wasm-bindgen = "=0.2.92"
+
+[workspace.dependencies.web-sys]
+version = "0.3.64"
+features = ["MediaQueryList"]

@@ -1,0 +1,7 @@
+target/
+dist/
+node_modules/
+*.lock
+*.lockb
+package-lock.json
+website/img/*.png

@@ -1,0 +1,448 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  /* comfortaa-600 - latin */
+  @font-face {
+    font-display: swap; /* Check https://developer.mozilla.org/en-US/docs/Web/CSS/@font-face/font-display for other options. */
+    font-family: "Comfortaa";
+    font-style: normal;
+    font-weight: 600;
+    src: url("../fonts/comfortaa-v45-latin-600.woff2") format("woff2"); /* Chrome 36+, Opera 23+, Firefox 39+, Safari 12+, iOS 10+ */
+  }
+
+  /* comfortaa-700 - latin */
+  @font-face {
+    font-display: swap; /* Check https://developer.mozilla.org/en-US/docs/Web/CSS/@font-face/font-display for other options. */
+    font-family: "Comfortaa";
+    font-style: normal;
+    font-weight: 700;
+    src: url("../fonts/comfortaa-v45-latin-700.woff2") format("woff2"); /* Chrome 36+, Opera 23+, Firefox 39+, Safari 12+, iOS 10+ */
+  }
+
+  /* open-sans-regular - latin */
+  @font-face {
+    font-display: swap; /* Check https://developer.mozilla.org/en-US/docs/Web/CSS/@font-face/font-display for other options. */
+    font-family: "Open Sans";
+    font-style: normal;
+    font-weight: 400;
+    src: url("../fonts/open-sans-v40-latin-regular.woff2") format("woff2"); /* Chrome 36+, Opera 23+, Firefox 39+, Safari 12+, iOS 10+ */
+  }
+
+  /*! Devices.css v0.2.0 | MIT License | github.com/picturepan2/devices.css */
+  .device,
+  .device::before,
+  .device::after,
+  .device *,
+  .device *::before,
+  .device *::after {
+    box-sizing: border-box;
+    display: block;
+  }
+
+  .crisp-edges {
+    image-rendering: -webkit-optimize-contrast;
+    image-rendering: crisp-edges;
+    /* image-rendering: crisp-edges; */
+    /* image-rendering: -moz-crisp-edges; */
+  }
+
+  .container-inline-size {
+    container-type: inline-size;
+    /* writing-mode: vertical-lr; */
+  }
+
+  .device {
+    position: relative;
+    transform: scale(1);
+    z-index: 1;
+  }
+
+  .device .device-frame {
+    z-index: 1;
+  }
+
+  .device .device-screen {
+    background-position: center center;
+    background-size: cover;
+    object-fit: cover;
+    position: relative;
+  }
+
+  .device-google-pixel-6-pro {
+    --device-width: 404;
+    height: calc(862 * 1cqi / var(--device-width) * 100);
+    width: 100cqi;
+  }
+
+  .device-google-pixel-6-pro .device-frame {
+    background: #121212;
+    border-radius: calc(28 * 1cqi / var(--device-width) * 100);
+    box-shadow:
+      inset 0 0 calc(12 * 1cqi / var(--device-width) * 100) #8d8d86,
+      inset 0 calc(7 * 1cqi / var(--device-width) * 100) 0
+        calc(3 * 1cqi / var(--device-width) * 100) #fdfdfc,
+      inset 0 calc(-6 * 1cqi / var(--device-width) * 100) 0
+        calc(3 * 1cqi / var(--device-width) * 100) #fdfdfc;
+    height: calc(862 * 1cqi / var(--device-width) * 100);
+    margin: 0 calc(2 * 1cqi / var(--device-width) * 100);
+    padding: calc(20 * 1cqi / var(--device-width) * 100)
+      calc(12 * 1cqi / var(--device-width) * 100)
+      calc(26 * 1cqi / var(--device-width) * 100)
+      calc(12 * 1cqi / var(--device-width) * 100);
+    width: calc(400 * 1cqi / var(--device-width) * 100);
+  }
+
+  .device-google-pixel-6-pro .device-screen {
+    border-radius: calc(27 * 1cqi / var(--device-width) * 100);
+    height: calc(816 * 1cqi / var(--device-width) * 100);
+    width: calc(376 * 1cqi / var(--device-width) * 100);
+  }
+
+  .device-google-pixel-6-pro .device-header {
+    background: linear-gradient(
+      to bottom,
+      #8d8d86 0,
+      #cbcbc8 30%,
+      #cbcbc8 100%
+    );
+    height: calc(10 * 1cqi / var(--device-width) * 100);
+    left: 50%;
+    margin-left: calc(-147 * 1cqi / var(--device-width) * 100);
+    position: absolute;
+    top: 0;
+    width: calc(294 * 1cqi / var(--device-width) * 100);
+  }
+
+  .device-google-pixel-6-pro .device-stripe::after {
+    background: linear-gradient(to top, #121212, #666661);
+    border-radius: calc(50 * 1cqi / var(--device-width) * 100)
+      calc(50 * 1cqi / var(--device-width) * 100) 0 0;
+    bottom: 0;
+    content: "";
+    height: calc(2 * 1cqi / var(--device-width) * 100);
+    left: 50%;
+    margin-left: calc(-22 * 1cqi / var(--device-width) * 100);
+    position: absolute;
+    width: calc(44 * 1cqi / var(--device-width) * 100);
+  }
+
+  .device-google-pixel-6-pro .device-stripe::before {
+    background: #cbcbc8;
+    bottom: 0;
+    content: "";
+    height: calc(9 * 1cqi / var(--device-width) * 100);
+    left: 50%;
+    margin-left: calc(40 * 1cqi / var(--device-width) * 100);
+    position: absolute;
+    width: calc(11 * 1cqi / var(--device-width) * 100);
+  }
+
+  .device-google-pixel-6-pro .device-sensors {
+    background: #121212;
+    border-radius: 50%;
+    height: calc(22 * 1cqi / var(--device-width) * 100);
+    left: 50%;
+    margin-left: calc(-11 * 1cqi / var(--device-width) * 100);
+    margin-top: calc(-11 * 1cqi / var(--device-width) * 100);
+    position: absolute;
+    top: calc(39 * 1cqi / var(--device-width) * 100);
+    width: calc(22 * 1cqi / var(--device-width) * 100);
+  }
+
+  .device-google-pixel-6-pro .device-sensors::after,
+  .device-google-pixel-6-pro .device-sensors::before {
+    content: "";
+    position: absolute;
+  }
+
+  .device-google-pixel-6-pro .device-sensors::after {
+    background: linear-gradient(to bottom, #121212, #666661);
+    border-radius: 0 0 calc(50 * 1cqi / var(--device-width) * 100)
+      calc(50 * 1cqi / var(--device-width) * 100);
+    height: calc(4 * 1cqi / var(--device-width) * 100);
+    left: 50%;
+    margin-left: calc(-103 * 1cqi / var(--device-width) * 100);
+    top: calc(-18 * 1cqi / var(--device-width) * 100);
+    width: calc(206 * 1cqi / var(--device-width) * 100);
+  }
+
+  .device-google-pixel-6-pro .device-sensors::before {
+    background: radial-gradient(
+        farthest-corner at 20% 20%,
+        #6074bf 0,
+        transparent 40%
+      ),
+      radial-gradient(
+        farthest-corner at 80% 80%,
+        #513785 0,
+        #24555e 20%,
+        transparent 50%
+      );
+    border-radius: 50%;
+    box-shadow: 0 0 calc(1 * 1cqi / var(--device-width) * 100)
+      calc(1 * 1cqi / var(--device-width) * 100) rgba(255, 255, 255, 0.05);
+    height: calc(8 * 1cqi / var(--device-width) * 100);
+    left: calc(7 * 1cqi / var(--device-width) * 100);
+    top: calc(7 * 1cqi / var(--device-width) * 100);
+    width: calc(8 * 1cqi / var(--device-width) * 100);
+  }
+
+  .device-google-pixel-6-pro .device-btns {
+    background: #b2b2ae;
+    height: calc(102 * 1cqi / var(--device-width) * 100);
+    position: absolute;
+    right: 0;
+    top: calc(306 * 1cqi / var(--device-width) * 100);
+    width: calc(3 * 1cqi / var(--device-width) * 100);
+  }
+
+  .device-google-pixel-6-pro .device-power {
+    background: #b2b2ae;
+    height: calc(58 * 1cqi / var(--device-width) * 100);
+    position: absolute;
+    right: 0;
+    top: calc(194 * 1cqi / var(--device-width) * 100);
+    width: calc(3 * 1cqi / var(--device-width) * 100);
+  }
+
+  .device-google-pixel-6-pro.device-black .device-frame {
+    box-shadow:
+      inset 0 0 calc(12 * 1cqi / var(--device-width) * 100) black,
+      inset 0 calc(7 * 1cqi / var(--device-width) * 100) 0
+        calc(3 * 1cqi / var(--device-width) * 100) #646668,
+      inset 0 calc(-6 * 1cqi / var(--device-width) * 100) 0
+        calc(3 * 1cqi / var(--device-width) * 100) #646668;
+  }
+
+  .device-google-pixel-6-pro.device-black .device-header {
+    background: linear-gradient(to bottom, black 0, #323334 30%, #323334 100%);
+  }
+
+  .device-google-pixel-6-pro.device-black .device-stripe::after {
+    background: linear-gradient(to top, #121212, black);
+  }
+
+  .device-google-pixel-6-pro.device-black .device-stripe::before {
+    background: #323334;
+  }
+
+  .device-google-pixel-6-pro.device-black .device-btns {
+    background: #191a1a;
+  }
+
+  .device-google-pixel-6-pro.device-black .device-power {
+    background: #191a1a;
+  }
+
+  .device-macbook-pro {
+    --device-width: 740;
+    height: calc(434 * 1cqi / var(--device-width) * 100);
+    width: 100cqi;
+  }
+
+  .device-macbook-pro .device-frame {
+    background: #0d0d0d;
+    border-radius: calc(20 * 1cqi / var(--device-width) * 100);
+    box-shadow: inset 0 0 0 calc(2 * 1cqi / var(--device-width) * 100) #c8cacb;
+    height: calc(418 * 1cqi / var(--device-width) * 100);
+    margin: 0 auto;
+    padding: calc(9 * 1cqi / var(--device-width) * 100)
+      calc(9 * 1cqi / var(--device-width) * 100)
+      calc(23 * 1cqi / var(--device-width) * 100)
+      calc(9 * 1cqi / var(--device-width) * 100);
+    position: relative;
+    width: calc(618 * 1cqi / var(--device-width) * 100);
+  }
+
+  .device-macbook-pro .device-frame::after {
+    background: linear-gradient(to bottom, #272727, #0d0d0d);
+    border-radius: 0 0 calc(20 * 1cqi / var(--device-width) * 100)
+      calc(20 * 1cqi / var(--device-width) * 100);
+    bottom: calc(2 * 1cqi / var(--device-width) * 100);
+    content: "";
+    height: calc(24 * 1cqi / var(--device-width) * 100);
+    left: calc(2 * 1cqi / var(--device-width) * 100);
+    position: absolute;
+    width: calc(614 * 1cqi / var(--device-width) * 100);
+  }
+
+  .device-macbook-pro .device-header {
+    background: #0d0d0d;
+    border-bottom-left-radius: calc(4 * 1cqi / var(--device-width) * 100);
+    border-bottom-right-radius: calc(4 * 1cqi / var(--device-width) * 100);
+    height: calc(12 * 1cqi / var(--device-width) * 100);
+    left: 50%;
+    margin-left: calc(-32 * 1cqi / var(--device-width) * 100);
+    position: absolute;
+    top: calc(11 * 1cqi / var(--device-width) * 100);
+    width: calc(64 * 1cqi / var(--device-width) * 100);
+    z-index: 2;
+  }
+
+  .device-macbook-pro .device-header::after,
+  .device-macbook-pro .device-header::before {
+    content: "";
+    height: calc(4 * 1cqi / var(--device-width) * 100);
+    position: absolute;
+    top: 0;
+    width: calc(4 * 1cqi / var(--device-width) * 100);
+  }
+
+  .device-macbook-pro .device-header::after {
+    background: radial-gradient(
+      circle at bottom left,
+      transparent 0,
+      transparent 75%,
+      #0d0d0d 75%,
+      #0d0d0d 100%
+    );
+    left: calc(-4 * 1cqi / var(--device-width) * 100);
+  }
+
+  .device-macbook-pro .device-header::before {
+    background: radial-gradient(
+      circle at bottom right,
+      transparent 0,
+      transparent 75%,
+      #0d0d0d 75%,
+      #0d0d0d 100%
+    );
+    right: calc(-4 * 1cqi / var(--device-width) * 100);
+  }
+
+  .device-macbook-pro .device-screen {
+    border: calc(2 * 1cqi / var(--device-width) * 100) solid #121212;
+    border-radius: calc(10 * 1cqi / var(--device-width) * 100)
+      calc(10 * 1cqi / var(--device-width) * 100) 0 0;
+    height: calc(375 * 1cqi / var(--device-width) * 100);
+    width: calc(600 * 1cqi / var(--device-width) * 100);
+  }
+
+  .device-macbook-pro .device-power {
+    background: radial-gradient(circle at center, #e2e3e4 85%, #c8cacb 100%);
+    border: solid #a0a3a7;
+    border-radius: calc(2 * 1cqi / var(--device-width) * 100)
+      calc(2 * 1cqi / var(--device-width) * 100)
+      calc(12 * 1cqi / var(--device-width) * 100)
+      calc(12 * 1cqi / var(--device-width) * 100);
+    border-width: calc(1 * 1cqi / var(--device-width) * 100)
+      calc(2 * 1cqi / var(--device-width) * 100) 0
+      calc(2 * 1cqi / var(--device-width) * 100);
+    box-shadow: inset 0 calc(-2 * 1cqi / var(--device-width) * 100)
+      calc(8 * 1cqi / var(--device-width) * 100) 0 #6c7074;
+    height: calc(24 * 1cqi / var(--device-width) * 100);
+    margin-top: calc(-10 * 1cqi / var(--device-width) * 100);
+    position: relative;
+    width: calc(740 * 1cqi / var(--device-width) * 100);
+    z-index: 9;
+  }
+
+  .device-macbook-pro .device-power::after {
+    background: #e2e3e4;
+    border-radius: 0 0 calc(10 * 1cqi / var(--device-width) * 100)
+      calc(10 * 1cqi / var(--device-width) * 100);
+    box-shadow: inset 0 0 calc(4 * 1cqi / var(--device-width) * 100)
+      calc(2 * 1cqi / var(--device-width) * 100) #babdbf;
+    content: "";
+    height: calc(10 * 1cqi / var(--device-width) * 100);
+    left: 50%;
+    margin-left: calc(-60 * 1cqi / var(--device-width) * 100);
+    position: absolute;
+    top: 0;
+    width: calc(120 * 1cqi / var(--device-width) * 100);
+  }
+
+  .device-macbook-pro .device-power::before {
+    background: transparent;
+    border-radius: 0 0 calc(3 * 1cqi / var(--device-width) * 100)
+      calc(3 * 1cqi / var(--device-width) * 100);
+    bottom: calc(-2 * 1cqi / var(--device-width) * 100);
+    box-shadow:
+      calc(-300 * 1cqi / var(--device-width) * 100) 0 #272727,
+      calc(300 * 1cqi / var(--device-width) * 100) 0 #272727;
+    content: "";
+    height: calc(2 * 1cqi / var(--device-width) * 100);
+    left: 50%;
+    margin-left: calc(-20 * 1cqi / var(--device-width) * 100);
+    position: absolute;
+    width: calc(40 * 1cqi / var(--device-width) * 100);
+  }
+
+  .device-macbook-pro.device-spacegray .device-frame {
+    box-shadow: inset 0 0 0 calc(2 * 1cqi / var(--device-width) * 100) #767a7d;
+  }
+
+  .device-macbook-pro.device-spacegray .device-power {
+    background: radial-gradient(circle at center, #83878a 85%, #767a7d 100%);
+    border-color: #454749;
+    box-shadow: inset 0 calc(-2 * 1cqi / var(--device-width) * 100)
+      calc(8 * 1cqi / var(--device-width) * 100) 0 #202121;
+  }
+
+  .device-macbook-pro.device-spacegray .device-power::after {
+    background: #b7babc;
+    box-shadow: inset 0 0 calc(4 * 1cqi / var(--device-width) * 100)
+      calc(2 * 1cqi / var(--device-width) * 100) #6a6d70;
+  }
+
+  .device-ipad-pro-2017 {
+    --device-width: 560;
+    height: calc(804 * 1cqi / var(--device-width) * 100);
+    width: 100cqi;
+  }
+
+  .device-ipad-pro-2017 .device-frame {
+    background: #fff;
+    border-radius: calc(38 * 1cqi / var(--device-width) * 100);
+    box-shadow:
+      inset 0 0 0 calc(2 * 1cqi / var(--device-width) * 100) #c8cacb,
+      inset 0 0 0 calc(6 * 1cqi / var(--device-width) * 100) #e2e3e4;
+    height: calc(804 * 1cqi / var(--device-width) * 100);
+    padding: calc(62 * 1cqi / var(--device-width) * 100)
+      calc(25 * 1cqi / var(--device-width) * 100);
+    width: calc(560 * 1cqi / var(--device-width) * 100);
+  }
+
+  .device-ipad-pro-2017 .device-screen {
+    border: calc(2 * 1cqi / var(--device-width) * 100) solid #222;
+    border-radius: calc(2 * 1cqi / var(--device-width) * 100);
+    height: calc(680 * 1cqi / var(--device-width) * 100);
+    width: calc(510 * 1cqi / var(--device-width) * 100);
+  }
+
+  .device-ipad-pro-2017 .device-home {
+    border: calc(2 * 1cqi / var(--device-width) * 100) solid #c8cacb;
+    border-radius: 50%;
+    bottom: calc(17 * 1cqi / var(--device-width) * 100);
+    height: calc(34 * 1cqi / var(--device-width) * 100);
+    left: 50%;
+    margin-left: calc(-17 * 1cqi / var(--device-width) * 100);
+    position: absolute;
+    width: calc(34 * 1cqi / var(--device-width) * 100);
+  }
+
+  .device-ipad-pro-2017 .device-sensors {
+    background: #666;
+    border-radius: 50%;
+    height: calc(10 * 1cqi / var(--device-width) * 100);
+    left: 50%;
+    margin-left: calc(-5 * 1cqi / var(--device-width) * 100);
+    margin-top: calc(-5 * 1cqi / var(--device-width) * 100);
+    position: absolute;
+    top: calc(34 * 1cqi / var(--device-width) * 100);
+    width: calc(10 * 1cqi / var(--device-width) * 100);
+  }
+
+  .device-ipad-pro-2017.device-spacegray .device-frame {
+    background: #222;
+    box-shadow:
+      inset 0 0 0 calc(2 * 1cqi / var(--device-width) * 100) #818187,
+      inset 0 0 0 calc(6 * 1cqi / var(--device-width) * 100) #9b9ba0;
+  }
+
+  .device-ipad-pro-2017.device-spacegray .device-home {
+    border-color: #818187;
+  }
+}
