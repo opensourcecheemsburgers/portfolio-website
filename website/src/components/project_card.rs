@@ -56,14 +56,14 @@ pub fn RustyTubeCard() -> impl IntoView {
                 tablet_img_src="img/rt_tablet.webp"
             />
             <div class="flex flex-col gap-4">
-                <a href="https://rustytube.rs" class="btn btn-lg btn-block btn-secondary">
+                <a href="https://rustytube.rs" class="btn btn-lg btn-block btn-primary">
                     <AppWindow weight=IconWeight::Duotone class="w-8 h-8 primary-content"/>
                     {"Web App"}
                 </a>
                 <a
                     target="_blank"
                     href="https://github.com/opensourcecheemsburgers/RustyTube/releases"
-                    class="btn btn-lg btn-block btn-primary"
+                    class="btn btn-lg btn-block btn-secondary"
                 >
                     // <Binary weight=IconWeight::Duotone class="w-8 h-8 primary-content"/>
                     <AppWindow weight=IconWeight::Duotone class="w-8 h-8 primary-content"/>
