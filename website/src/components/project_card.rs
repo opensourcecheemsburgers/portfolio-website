@@ -65,8 +65,7 @@ pub fn RustyTubeCard() -> impl IntoView {
                     href="https://github.com/opensourcecheemsburgers/RustyTube/releases"
                     class="btn btn-lg btn-block btn-secondary"
                 >
-                    // <Binary weight=IconWeight::Duotone class="w-8 h-8 primary-content"/>
-                    <AppWindow weight=IconWeight::Duotone class="w-8 h-8 primary-content"/>
+                    <Binary weight=IconWeight::Duotone class="w-8 h-8 primary-content"/>
                     {"Binaries"}
                 </a>
                 <a
