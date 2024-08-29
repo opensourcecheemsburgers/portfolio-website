@@ -9,9 +9,11 @@
 
   "exec": {
     "commands": [{
-      "command": "leptosfmt -q --stdin --rustfmt",
-      "exts": ["rs"],
-      "stdin": true
+      "command": "leptosfmt --stdin --rustfmt -e",
+      "exts": ["rs"]
+    }, {
+      "command": "tidy -wrap 0 -indent --indent=spaces 4 --indent-with-tabs yes --sort-attributes alpha --tidy-mark no",
+      "exts": ["html"]
     }]
   },
 

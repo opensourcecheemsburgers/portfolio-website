@@ -30,7 +30,7 @@ pub fn ContactForm() -> impl IntoView {
     view! {
         <div
             data-theme=theme
-            class="flex flex-col w-full max-w-2xl bg-base-200 rounded-3xl lg:p-12 p-8 gap-8 text-base-content data-[theme=winter]:shadow-2xl data-[theme=rustytube]:shadow-none"
+            class="flex flex-col gap-8 p-8 w-full max-w-2xl rounded-3xl lg:p-12 bg-base-200 text-base-content data-[theme=winter]:shadow-2xl data-[theme=rustytube]:shadow-none"
         >
             // <h1 class=HEADING_TEXT>{"Email Form"}</h1>
             <form class="flex flex-col gap-6">

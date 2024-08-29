@@ -20,7 +20,7 @@ fn ProjectCardContainer(children: Children) -> impl IntoView {
     view! {
         <div
             data-theme=theme
-            class="bg-base-200 rounded-3xl lg:p-12 p-8 space-y-10 text-base-content data-[theme=winter]:shadow-2xl data-[theme=rustytube]:shadow-none w-full"
+            class="p-8 space-y-10 w-full rounded-3xl lg:p-12 bg-base-200 text-base-content data-[theme=winter]:shadow-2xl data-[theme=rustytube]:shadow-none"
         >
             {children()}
         </div>
@@ -36,7 +36,7 @@ pub fn RustyTubeCard() -> impl IntoView {
                 <a
                     target="_blank"
                     href="https://github.com/opensourcecheemsburgers/RustyTube"
-                    class="badge badge-lg border-[#FFCF40] gap-2"
+                    class="gap-2 badge badge-lg border-[#FFCF40]"
                 >
                     <Star weight=IconWeight::Duotone class="w-5 h-5"/>
                     {"500+"}
@@ -92,7 +92,7 @@ pub fn UbiquityCard() -> impl IntoView {
                 <a
                     target="_blank"
                     href="https://github.com/opensourcecheemsburgers/ubiquity"
-                    class="badge badge-lg border-[#FFCF40] gap-2"
+                    class="gap-2 badge badge-lg border-[#FFCF40]"
                 >
                     <Star weight=IconWeight::Duotone class="w-5 h-5"/>
                     {"150+"}
@@ -182,7 +182,7 @@ pub fn PersonalWebsiteCard() -> impl IntoView {
 #[component]
 fn RustBadge() -> impl IntoView {
     view! {
-        <a href="https://rust-lang.org" class="badge badge-lg border-[#F74B00] gap-2">
+        <a href="https://rust-lang.org" class="gap-2 badge badge-lg border-[#F74B00]">
             <svg
                 class="w-5 h-5"
                 viewBox="0 0 4417 3259"
@@ -265,7 +265,7 @@ fn RustBadge() -> impl IntoView {
 #[component]
 fn YewBadge() -> impl IntoView {
     view! {
-        <a href="https://yew.rs" class="badge badge-lg border-[#B3E1CE] gap-2">
+        <a href="https://yew.rs" class="gap-2 badge badge-lg border-[#B3E1CE]">
             <svg class="w-5 h-5" viewBox="0 0 75 82" xmlns="http://www.w3.org/2000/svg">
                 <circle cx="38" cy="40" r="25" fill="#B3E1CE"></circle>
                 <path
@@ -303,7 +303,7 @@ fn YewBadge() -> impl IntoView {
 #[component]
 fn LeptosBadge() -> impl IntoView {
     view! {
-        <a href="https://leptos.dev" class="badge badge-lg border-[#4338ca] gap-2">
+        <a href="https://leptos.dev" class="gap-2 badge badge-lg border-[#4338ca]">
             <svg
                 class="w-5 h-5"
                 version="1.1"
@@ -372,7 +372,7 @@ fn LeptosBadge() -> impl IntoView {
 #[component]
 fn TailwindBadge() -> impl IntoView {
     view! {
-        <a href="https://tailwindcss.com" class="badge badge-lg border-[#38bdf8] gap-2">
+        <a href="https://tailwindcss.com" class="gap-2 badge badge-lg border-[#38bdf8]">
             <svg class="w-5 h-5" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 54 33">
                 <g clip-path="url(#prefix__clip0)">
                     <path
@@ -396,7 +396,7 @@ fn TailwindBadge() -> impl IntoView {
 #[component]
 fn DaisyUiBadge() -> impl IntoView {
     view! {
-        <a href="https://daisyui.com" class="badge badge-lg border-[#1AD1A5] gap-2">
+        <a href="https://daisyui.com" class="gap-2 badge badge-lg border-[#1AD1A5]">
             <svg
                 class="w-5 h-5"
                 viewBox="0 0 1024 1024"

@@ -11,8 +11,14 @@ repository.workspace = true
 description.workspace = true
 
 [dependencies]
+console_error_panic_hook = { workspace = true }
+gloo = { workspace = true }
+highlight-pulldown = { workspace = true }
 leptos = { workspace = true }
 leptos_router = { workspace = true }
 phosphor-leptos = { workspace = true }
+pulldown-cmark = { workspace = true }
+syntect = { workspace = true }
+syntect-assets = { workspace = true }
 wasm-bindgen = { workspace = true }
 web-sys = { workspace = true }

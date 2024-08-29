@@ -4,13 +4,9 @@ scope = "source.rust"
 injection-regex = "rust"
 file-types = ["rs"]
 roots = ["Cargo.toml", "Cargo.lock", "tailwind.config.js"]
-formatter = { command = "dprint", args = ["fmt", "--stdin"] }
+formatter = { command = "dprint", args = ["fmt", "--stdin", "rs"] }
 language-servers = ["rust-analyzer", "tailwindcss-language-server"]
 auto-format = true
-
-[language-server.dprint]
-command = "dprint"
-args = ["lsp"]
 
 [language-server.rust-analyzer.config]
 cargo = { features = "all" }
@@ -38,14 +34,14 @@ args = ["--stdio"]
 name = "html"
 file-types = ["html"]
 language-servers = ["vscode-html-language-server", "tailwindcss-language-server"]
-formatter = { command = "dprint", args = ["fmt", "--stdin", "prettier"] }
+formatter = { command = "dprint", args = ["fmt", "--stdin", "html"] }
 auto-format = true
 
 [[language]]
 name = "css"
 file-types = ["css"]
 language-servers = ["vscode-css-language-server"]
-formatter = { command = "dprint", args = ["fmt", "--stdin", "prettier"] }
+formatter = { command = "dprint", args = ["fmt", "--stdin", "css"] }
 auto-format = true
 
 [[language]]

@@ -11,7 +11,7 @@ pub fn DeviceMockups(
         <div class="w-full carousel">
             <div
                 id=format!("{id_prefix}_desktop")
-                class="relative justify-center items-center carousel-item container-inline-size w-full"
+                class="relative justify-center items-center w-full carousel-item container-inline-size"
             >
                 <div class="w-[96rem] container-inline-size lg:w-[96rem]">
                     <div class="device device-spacegray device-macbook-pro">
@@ -32,7 +32,7 @@ pub fn DeviceMockups(
             </div>
             <div
                 id=format!("{id_prefix}_mobile")
-                class="relative justify-center w-full items-center carousel-item container-inline-size"
+                class="relative justify-center items-center w-full carousel-item container-inline-size"
             >
                 <div class="w-[9.75rem] container-inline-size md:w-[13rem] lg:w-[19.5rem] 2xl:w-[26rem]">
                     <div class="device device-black device-google-pixel-6-pro">
@@ -53,7 +53,7 @@ pub fn DeviceMockups(
             </div>
             <div
                 id=format!("{id_prefix}_tablet")
-                class="relative justify-center items-center carousel-item container-inline-size w-full"
+                class="relative justify-center items-center w-full carousel-item container-inline-size"
             >
                 <div class="w-[15rem] container-inline-size md:w-[20rem] lg:w-[30rem] 2xl:w-[40rem]">
                     <div class="device device-spacegray device-ipad-pro-2017">

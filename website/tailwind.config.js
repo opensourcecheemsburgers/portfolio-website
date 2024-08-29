@@ -14,30 +14,11 @@ module.exports = {
 	plugins: [require("daisyui"), require("@tailwindcss/typography")],
 	theme: {
 		fontFamily: {
-			sans: ["Open Sans", "Noto Color Emoji"],
-			display: ["Comfortaa", "Noto Color Emoji"],
-			mono: ["Fira Mono", "Noto Color Emoji"],
+			sans: ["Open Sans", "Figtree"],
+			display: ["Comfortaa"],
+			mono: ["Cousine"],
 		},
 		extend: {
-			fontFamily: {
-				sans: [
-					'"Open Sans"',
-					'"Inter"',
-					"system-ui",
-					"-apple-system",
-					"BlinkMacSystemFont",
-					'"Segoe UI"',
-					"Roboto",
-					'"Helvetica Neue"',
-					"Arial",
-					'"Noto Sans"',
-					"sans-serif",
-					'"Apple Color Emoji"',
-					'"Segoe UI Emoji"',
-					'"Segoe UI Symbol"',
-					'"Noto Color Emoji"',
-				],
-			},
 			screens: {
 				"3xl": "1920px",
 				"4xl": "2560px",

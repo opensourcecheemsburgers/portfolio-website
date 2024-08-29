@@ -20,10 +20,10 @@ pub fn Page() -> impl IntoView {
     view! {
         <div
             data-theme=theme
-            class="min-h-screen overflow-y-auto flex flex-col justify-between items-center data-[theme=rustytube]:bg-base-300 data-[theme=winter]:bg-base-100 w-full"
+            class="flex overflow-y-auto flex-col justify-between items-center w-full min-h-screen data-[theme=rustytube]:bg-base-300 data-[theme=winter]:bg-base-100"
         >
             <Drawer>
-                <div class="flex flex-col gap-8 items-center px-2 w-full sm:px-4 lg:px-8 xl:px-16 2xl:px-32 min-[1800px]:px-64 min-[2160px]:px-96">
+                <div class="flex flex-col gap-8 items-center px-2 w-full sm:px-4 lg:px-8 xl:px-16 2xl:px-32 min-[1800px]:px-64 min-[2160px]:px-[28rem]">
                     <Navbar/>
                     <div class="flex flex-col items-center py-16 px-6 space-y-16 w-full">
                         <Outlet/>

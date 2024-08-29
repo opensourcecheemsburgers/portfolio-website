@@ -14,7 +14,7 @@ use components::Page;
 use leptos::{component, provide_context, view, window, IntoView, RwSignal};
 use leptos_router::{Route, Router, Routes};
 
-use crate::pages::{Contact, Home};
+use crate::pages::{BlogPage, Contact, Home};
 
 pub static BODY_TEXT: &str =
     "text-pretty font-sans font-regular text-base-content text-lg sm:text-lg \
@@ -46,6 +46,7 @@ fn App() -> impl IntoView {
             <Routes>
                 <Route path="" view=Page>
                     <Route path="/" view=Home/>
+                    <Route path="/blogs/:id" view=BlogPage/>
                     <Route path=CONTACT_PAGE_LINK view=Contact/>
                 </Route>
             </Routes>
@@ -54,5 +55,6 @@ fn App() -> impl IntoView {
 }
 
 fn main() {
+    console_error_panic_hook::set_once();
     leptos::mount_to_body(|| view! { <App/> });
 }

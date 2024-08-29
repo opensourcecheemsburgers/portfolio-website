@@ -8,7 +8,7 @@ use crate::{components::DRAWER_ID, DarkThemeCtx, CONTACT_PAGE_LINK};
 #[component]
 pub fn Navbar() -> impl IntoView {
     view! {
-        <div class="navbar data-[theme=rustytube]:bg-base-300 data-[theme=winter]:bg-base-100 px-0">
+        <div class="px-0 navbar data-[theme=rustytube]:bg-base-300 data-[theme=winter]:bg-base-100">
             <NavbarStart/>
             <NavbarCenter/>
             <NavbarEnd/>
