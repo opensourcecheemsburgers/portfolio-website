@@ -44,7 +44,7 @@ pub fn BlogContainer(markdown: String) -> impl IntoView {
         <article
             data-theme=theme
             inner_html=highlighted_markdown_html
-            class="max-w-5xl bg-transparent prose prose-2xl prose-a:no-underline prose-code:select-all [&>pre]:select-all [&>pre]:mockup-code [&>pre]:bg-netural [&>pre]:text-neutral-content"
+            class="max-w-full bg-transparent xl:max-w-5xl prose-slate prose prose-sm prose-a:no-underline prose-code:select-all [&>pre]:select-all [&>pre]:mockup-code [&>pre]:bg-netural [&>pre]:text-neutral-content sm:prose-base md:prose-lg lg:prose-xl xl:prose-2xl"
         >
 
             {}
