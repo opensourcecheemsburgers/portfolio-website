@@ -109,7 +109,7 @@ To add non-dprint formatters, we need to define them as commands in `dprint.json
 
 Note: Appending `-e` to Leptosfmt, will add experimental support for Tailwind class formatting using [`rustywind`][rustywind].
 
-IMPORTANT: For any formatters added using the `dprint-plugin-exec` method, the helix formatter command must be: `dprint fmt --stdin {extension}` where the extension is equal to the one defined in `dprint.json` or `.dprint.json`.
+IMPORTANT: For any formatters added using the [`dprint-plugin-exec`][dprint-exec-plugin] method, the helix formatter command must be: `dprint fmt --stdin {extension}` where the extension is equal to the one defined in `dprint.json` or `.dprint.json`.
 
 ## Configuring Helix
 
@@ -307,6 +307,7 @@ bc1q8r90zc8j8a2rvkq4ds8374pxh3rpccxgnjx5x2
 [dprint-json-plugin]: https://github.com/dprint/dprint-plugin-json
 [dprint-typescript-plugin]: https://github.com/dprint/dprint-plugin-typescript
 [dprint-markdown-plugin]: https://github.com/dprint/dprint-plugin-markdown
+[dprint-exec-plugin]: https://github.com/dprint/dprint-plugin-markdown
 [rustywind]: https://github.com/avencera/rustywind
 [cptpotato-themes]: https://github.com/CptPotato/helix-themes
 [kitty]: https://github.com/kovidgoyal/kitty
